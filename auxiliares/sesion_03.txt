@@ -1,0 +1,58 @@
+Los elementos de W son elementos de R3 (recordemos que R3 son listas de
+números de tres elementos)
+
+Un elemento está en W si 2*primer elemento + 3*segundo elemento + 2026*tercer elemento es
+cero
+
+El vector (0,0,0) está en W. Sí se cumple!!
+
+
+Veamos que si (a1,a2,a3) y (b1,b2,b3) están en W, entonces la suma está en W
+
+
+El (1,1,1) no vive en W. Hay que cobrarle renta por canijo. Porque 2*1+3*1+2026*1=2031
+y para vivir en W esa operación nos debió dar 0	
+
+Porque todos los (x,y,z) que viven en W cumplen que 2x+4y+2026z=0
+
+
+Entendamos por qué el conjunto W={(x,y,z) tales que 2x+3y+2026z=0} es un subespacio
+
+El (0,0,0) debe vivir en W: 2*0 + 3*0 + 2026*0 = 0. O sea que (0,0,0) está en W
+
+El (2,3,1) no vive en W. ¿Por qué? 2*2+3*3+2026*1=4+9+2026=2039 y eso muestra que (2,3,1) no vive en W
+
+Vamos a tomar dos elementos de W; digamos (a,b,c) y (p,r,q). 
+
+Esto significa que 2a+3b+2026c=0 y 2p+3r+2026q=0
+
+¿Cómo es la suma de (a,b,c) con (p,q,r)?
+
+(a,b,c) + (p,q,r) = (a+p, b+q, c+r). Pero además:
+
+
+2(a+p)+3(b+q)+2026(c+r)=0
+
+Esto es cierto porque
+
+2(a+p)+3(b+q)+2026(c+r)
+=2a+2p+3b+3q+2026c+2026r
+=(2a+3b+2026c) + (2p+3q+2026r) 
+=0 + 0
+=0
+
+Hasta este momento hemos visto que si tomo dos elementos de W, entonces la suma de ellos vuelve a ser elemento
+de W. Ahora veamos que si t es un número y u es un elemento de W, entonces t*u es elemento de W
+
+
+Lo que quiero ver es que si (a, b,c) vive en W, entonces t*(a,b,c) también vive en W
+
+t*(a,b,c) = (t*a,t*b,t*c) y quiero ver que 2*ta+3*tb+2026*tc=0
+
+Pero 2*ta+3*tb+2026*tc=t(2a+3b+2026c)=t0=0
+
+Y entonces hemos demostrado que si t es un número y (a,b,c) vive en W, tenemos que t*(a,b,c) vive en W.
+
+Concluímos que W es un subespacio vectorial de R3
+
+
