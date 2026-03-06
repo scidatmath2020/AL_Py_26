@@ -1,0 +1,35 @@
+Una matriz M se dice simétrica si M=M^t
+
+Notemos que si M es simétrica y tiene mxn dimensiones entonces
+M^t debe tener nxm dimensiones y por lo tanto m=n.
+
+Es decir que M es una matriz CUADRADA (tiene la misa cantidad
+de filas que de columnas).
+
+Ahora bien, sabemos que el espacio M_{nxn}(R) es un espacio vectorial. Pues resulta
+que el conjunto de matrices simétricas es un subespacio vectorial.
+
+De hecho, la transposición de una matriz cumple cierta regla bonita:
+
+(A+B)^t = A^t+B^t
+(aA)^t = aA^t
+
+Si tomo A y B simétricas entonces (A+B)^t=A^t+B^t=A+B
+Si a es un número entonces (aA)^t=aA^t=aA
+
+###########################################################
+###########################################################
+###########################################################
+
+Si tomo los vectores (1,2) y (-3,0), que son vectores de R2, entonces el span de
+estos vectores son todas combinaciones a(1,2)+b(-3,0)=(a,2a)+(-3b,0)=(a-3b,2a)
+
+
+
+
+
+
+
+
+
+
