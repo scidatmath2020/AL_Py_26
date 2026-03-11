@@ -33,6 +33,14 @@ cancer["mean radius"].describe()
 
 cancer["mean perimeter"].cov(cancer["mean radius"])
 
+col1_mu = cancer["mean radius"] - cancer["mean radius"].mean() 
+col2_mu = cancer["mean perimeter"] - cancer["mean perimeter"].mean()
+
+col1_mu.dot(col2_mu) / (np.linalg.norm(col1_mu) * np.linalg.norm(col2_mu))
+ 
+
+
+
 
 
 media_radius = cancer["mean radius"].mean()
