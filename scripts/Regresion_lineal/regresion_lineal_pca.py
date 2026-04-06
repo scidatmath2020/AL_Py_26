@@ -2,7 +2,7 @@
 """
 Created on Sun Apr  5 21:33:33 2026
 
-@author: Usuario
+@author: SciData
 """
 import pandas as pd
 import numpy as np
