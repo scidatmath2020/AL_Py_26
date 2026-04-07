@@ -9,21 +9,21 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.formatting.rule import ColorScaleRule
 from openpyxl.utils import get_column_letter
-from sklearn.preprocessing import MinMaxScaler
 import os
-import numpy as np
+import time
 
 #%%
 
 # ====================== CONFIGURACIÓN ======================
 
 '''carpeta donde está X_reconstruido.csv'''
-ruta = r".................."
+
+ruta = r"........................"
 
 nombre_base = "X_reconstruido.csv"
 
 #%%
-
+inicio = time.time()
 excel_path = os.path.join(ruta, "X_reconstruido.xlsx")
 
 # ====================== LEER CSV ======================
@@ -69,3 +69,7 @@ wb.save(excel_path)
 print("✅ Excel generado correctamente")
 print(f"   Archivo: {excel_path}")
 print(f"   Dimensiones: {df.shape[0]} filas × {df.shape[1]} columnas")
+fin = time.time()
+tiempo_total = fin - inicio
+
+print(f"⏱️ Tiempo de ejecución: {tiempo_total:.4f} segundos")
